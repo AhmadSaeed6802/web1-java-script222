@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Destination Guide - Awesome Destinations</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="traveling.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Travel Destinations Guide</h1>
+        <nav>
+            <a href="#overview">Overview</a> |
+            <a href="#attractions">Attractions</a> |
+            <a href="#tips">Travel Tips</a>
+        </nav>
+    </header>
+    
+    <!-- Main Content Section -->
+    <main>
+         <!-- Image Switcher Section -->
+         <section id="imageSwitcher">
+            <!-- Main Image -->
+            <div id="mainImage">
+                <!-- Add the address of the main image here -->
+                <img src="travling picture.PNG" alt="Main Image">
+            </div>
+            
+            <!-- Switch Images -->
+            <!-- Add the addresses of the switch images here -->
+            <div class="switch-images">
+                <div id="image1" class="switch-image hidden">
+                    <img src="Badshahi Mosque pic.PNG" alt="Image 1">
+                </div>
+                <div id="image2" class="switch-image hidden">
+                    <img src="hanzala valley.PNG" alt="Image 2">
+                </div>
+                <div id="image3" class="switch-image hidden">
+                    <img src="mohanjo daro.PNG" alt="Image 3">
+                </div>
+        
+            
+            <!-- Image Switcher Buttons -->
+            <div id="switchImageButtons">
+                <button data-image="mainImage" class="switch-button">Main Image</button>
+                <button data-image="image1" class="switch-button">Badshahi Mosque</button>
+                <button data-image="image2" class="switch-button">Hunza Valley</button>
+                <button data-image="image3" class="switch-button">Mohenjo-Daro</button>
+            </div>
+            
+            <!-- Back to Main Button -->
+            <div id="backToMain">
+                <button id="backToMainButton" class="hidden">Back to Main</button>
+            </div>
+        </section>
+        <!-- Overview Section -->
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>Welcome to Awesome Destinations. We offer a unique travel experience for adventurers and explorers. Discover amazing places, rich cultures, and breathtaking landscapes. Whether you seek tranquility or adventure, our destinations have something special for everyone. 'Travel Destination Guide' is your traveling partner as well as a traveling guide you have whenever you want, it's always updated and ready to enjoy with you on the tours.</p>
+        </section>
+        
+        <!-- Attractions Section -->
+        <section id="attractions">
+            <h2>Attractions</h2>
+            <ol>
+                <li>Badshahi Mosque, Lahore: Visit one of the largest and most magnificent mosques in the world, known for its stunning architecture and historical significance.</li>
+                <li>Hunza Valley, Gilgit-Baltistan: Immerse yourself in the breathtaking beauty of Hunza Valley, surrounded by snow-capped peaks and lush green landscapes.</li>
+                <li>Mohenjo-Daro, Sindh: Explore the ancient ruins of Mohenjo-Daro, an archaeological marvel and one of the world's earliest urban settlements.</li>
+                <li>Naltar Valley, Khyber Pakhtunkhwa: Discover the serene Naltar Valley, famous for its colorful lakes, pine forests, and adventurous trekking trails.</li>
+                <li>Shandur Polo Ground, Chitral: Experience the thrill of the highest polo ground in the world and witness the annual Shandur Polo Festival.</li>
+                <li>Makran Coastal Highway, Balochistan: Drive along the scenic Makran Coastal Highway, offering stunning views of the Arabian Sea and coastal landscapes.</li>
+                <li>Swat Valley, Khyber Pakhtunkhwa: Enjoy the lush green valley of Swat, often referred to as the "Switzerland of the East," with its picturesque scenery and pleasant weather.</li>
+            </ol>
+        </section>
+        
+        <!-- Travel Tips Section -->
+        <section id="tips">
+            <h2>Travel Tips</h2>
+            <ul>
+                <li>Pack Light</li>
+                <li>Learn Basic Phrases</li>
+                <li>Respect Cultural Norms</li>
+                <li>Stay Hydrated</li>
+                <li>Follow Safety Guidelines</li>
+                <li>Be Mindful of Security Measures</li>
+            </ul>
+        </section>
+        
+        <!-- Table and Form Section -->
+        <section id="tableAndForm">
+            <!-- Table Section -->
+            <div class="table-section">
+                <h1>Top Attractions in Pakistan</h1>
+                <table id="attractionTable">
+                    <thead>
+                        <tr>
+                            <th>Attraction</th>
+                            <th>Location</th>
+                            <th>Rating (*)</th>
+                            <th>Feedback</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Predefined rows -->
+                        <tr>
+                            <td>Badshahi Mosque</td>
+                            <td>Lahore, Punjab</td>
+                            <td>4.7</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>Hunza Valley</td>
+                            <td>Gilgit-Baltistan</td>
+                            <td>4.9</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>Mohenjo-Daro</td>
+                            <td>Sindh</td>
+                            <td>4.5</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <!-- Button to add new attraction -->
+                <button id="addAttractionButton">Add New Attraction</button>
+            </div>
+            
+            <!-- Form Section -->
+            <div class="form-section">
+                <h1>Contact Us</h1>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <div class="subscribe-container">
+                        <label for="subscribe">Subscribe to Newsletter:</label>
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                    </div>
+                    
+                    <label>Gender:</label>
+                    <div class="gender">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    
+                    <input id="submitButton" type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        
+       
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>&copy; 2023 Awesome Destinations. All rights reserved.</footer>
+    
+    <!-- JavaScript -->
+    <script src="traveling.js"></script>
+</body>
+</html>
